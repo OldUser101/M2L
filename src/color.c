@@ -82,6 +82,7 @@ void printfc(unsigned char color, const char* format, ...)
 	vsprintf(str, format, args);
 	putstr(str, color);
 	va_end(args);
+	free(str);
 }
 
 // Displays a status message with a given status.
