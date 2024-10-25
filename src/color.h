@@ -99,8 +99,11 @@ void putstr(const char* str, unsigned char color);
 #error "Unsupported operating system."
 #endif
 
-// Displays a message with a specified color
+// Displays a message with a specified color.
 void printfc(unsigned char color, const char* format, ...);
 
 // Displays a status message with a given status.
 void printStatus(const char* msg, int code);
+
+// Displays a status message with variadic arguments.
+void printStatusF(int code, const char* format, ...);

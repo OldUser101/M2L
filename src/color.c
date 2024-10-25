@@ -117,3 +117,16 @@ void printStatus(const char* msg, int code)
 	putstr(errStr, textCol);
 	printf("]: %s\n", msg);       
 }
+
+// Same as printStatus(), but accepts variadic arguments.
+void printStatusF(int code, const char* format, ...)
+{
+	va_list args;
+	char* str;
+	va_start(args, format);
+	str = (char*)malloc(strlen(format));
+	vsprintf(str, format, args);
+	printStatus(str, code);
+	va_end(args);
+	free(str);
+}
