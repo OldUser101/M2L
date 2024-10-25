@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+#include "m2l.h"
 #include "color.h"
 
 // Define color macros for Windows systems
@@ -98,7 +99,7 @@ void printStatus(const char* msg, int code)
 			textCol = COLOR_LBLUE;
 			errStr = "INFO";
 			break;
-		case STATUS_WARNING:
+		case STATUS_WARN:
 			textCol = COLOR_LYELLOW;
 			errStr = "WARN";
 			break;
