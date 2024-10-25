@@ -16,12 +16,11 @@ mkdir bin > NUL
 echo Compiling source files...
 
 cd src\
-cl /nologo /EHsc m2l.c color.c disp.c file.c
+cl /nologo /EHsc m2l.c disp.c file.c
 
 echo Moving files...
 
 move m2l.obj ..\bin\ > NUL
-move color.obj ..\bin\ > NUL
 move disp.obj ..\bin\ > NUL
 move file.obj ..\bin\ > NUL
 

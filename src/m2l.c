@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 #include "m2l.h"
-#include "color.h"
 #include "disp.h"
 #include "file.h"
 
